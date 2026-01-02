@@ -2,6 +2,8 @@
 public/
 resources/
 .hugo_build.lock
+# docs is for manual deployment, do not ignore
+!docs/
 
 # System files
 .DS_Store

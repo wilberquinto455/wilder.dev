@@ -3,6 +3,7 @@ baseURL = 'https://wilberquinto455.github.io/wilder.dev/'
 languageCode = 'es-es'
 title = 'Wilder.devnet'
 theme = 'ananke'
+publishDir = 'docs'
 
 # Allow raw HTML in Markdown files
 [markup]

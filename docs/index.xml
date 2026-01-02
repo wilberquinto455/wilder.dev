@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wilder Andrés Quinto Torres on Wilder.devnet</title>
+    <link>https://wilberquinto455.github.io/wilder.dev/</link>
+    <description>Recent content in Wilder Andrés Quinto Torres on Wilder.devnet</description>
+    <generator>Hugo</generator>
+    <language>es-es</language>
+    <lastBuildDate>Thu, 01 Jan 2026 12:00:00 -0500</lastBuildDate>
+    <atom:link href="https://wilberquinto455.github.io/wilder.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contacto</title>
+      <link>https://wilberquinto455.github.io/wilder.dev/contact/</link>
+      <pubDate>Thu, 01 Jan 2026 12:00:00 -0500</pubDate>
+      <guid>https://wilberquinto455.github.io/wilder.dev/contact/</guid>
+      <description>&lt;p&gt;¿Tienes un proyecto en mente o simplemente quieres saludar?&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:wilberquinto455@gmail.com&#34;&gt;wilberquinto455@gmail.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/wilberquinto455&#34;&gt;github.com/wilberquinto455&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;¡Espero saber de ti pronto!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sobre Mí</title>
+      <link>https://wilberquinto455.github.io/wilder.dev/about/</link>
+      <pubDate>Thu, 01 Jan 2026 12:00:00 -0500</pubDate>
+      <guid>https://wilberquinto455.github.io/wilder.dev/about/</guid>
+      <description>&lt;p&gt;Hola, soy Wilder Andres Quinto Torres, ingeniero en telecomunicaciones e informática, me encanta aprender nuevas tecnologías y construir herramientas que ayuden a las personas. Actualmente llevo una trayectoria de 2 años en el campo de las telecomunicaciones, como soporte junior. Me encanta diseñar y contruir herramientas,  por eso me apasiona el desarroyo de software. La parte de redes y telecomunicaciones me encanta, por eso trato siempre de mesclar estas dos diciplinas y crear soluciones innovadoras. Que permitan automatizar tareas, mejorar la eficiencia y resolver problemas. Actualmente tengo conocimiento en:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mi Primer Post en Hugo</title>
+      <link>https://wilberquinto455.github.io/wilder.dev/posts/hola-mundo/</link>
+      <pubDate>Sat, 28 Dec 2024 12:00:00 -0500</pubDate>
+      <guid>https://wilberquinto455.github.io/wilder.dev/posts/hola-mundo/</guid>
+      <description>&lt;p&gt;Hola a todos. Este es mi primer post en mi nuevo sitio web creado con Hugo.&lt;/p&gt;&#xA;&lt;h2 id=&#34;por-qué-hugo&#34;&gt;¿Por qué Hugo?&lt;/h2&gt;&#xA;&lt;p&gt;Hugo es un generador de sitios estáticos increíblemente rápido y flexible. Me permite escribir mi contenido en Markdown y generar un sitio web completo en milisegundos.&lt;/p&gt;&#xA;&lt;p&gt;Próximamente estaré compartiendo más sobre mis proyectos y aprendizajes.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

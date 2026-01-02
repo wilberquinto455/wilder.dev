@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Wilder.devnet</title>
+    <link>https://wilberquinto455.github.io/wilder.dev/posts/</link>
+    <description>Recent content in Posts on Wilder.devnet</description>
+    <generator>Hugo</generator>
+    <language>es-es</language>
+    <lastBuildDate>Sat, 28 Dec 2024 12:00:00 -0500</lastBuildDate>
+    <atom:link href="https://wilberquinto455.github.io/wilder.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mi Primer Post en Hugo</title>
+      <link>https://wilberquinto455.github.io/wilder.dev/posts/hola-mundo/</link>
+      <pubDate>Sat, 28 Dec 2024 12:00:00 -0500</pubDate>
+      <guid>https://wilberquinto455.github.io/wilder.dev/posts/hola-mundo/</guid>
+      <description>&lt;p&gt;Hola a todos. Este es mi primer post en mi nuevo sitio web creado con Hugo.&lt;/p&gt;&#xA;&lt;h2 id=&#34;por-qué-hugo&#34;&gt;¿Por qué Hugo?&lt;/h2&gt;&#xA;&lt;p&gt;Hugo es un generador de sitios estáticos increíblemente rápido y flexible. Me permite escribir mi contenido en Markdown y generar un sitio web completo en milisegundos.&lt;/p&gt;&#xA;&lt;p&gt;Próximamente estaré compartiendo más sobre mis proyectos y aprendizajes.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
