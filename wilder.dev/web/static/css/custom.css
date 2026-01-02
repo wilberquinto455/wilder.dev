@@ -1,0 +1,376 @@
+/* ==============================================
+   PREMIUM ANANKE CUSTOMIZATIONS - Wilder.dev
+   Scoped styles to avoid breaking other pages
+   ============================================== */
+
+/* 1. Global Typography */
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 2. Header - Glassmorphism Effect */
+header.bg-black {
+    background-color: rgba(0, 0, 0, 0.92) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Logo Styling */
+header img {
+    filter: brightness(0) invert(1);
+    width: 45px !important;
+    height: auto !important;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+header a:hover img {
+    transform: rotate(-10deg) scale(1.05);
+}
+
+/* "ilder.dev" text suffix */
+header a.f3.fw2.hover-white.white-90.dib.no-underline::after {
+    content: "ilder.devnet";
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-left: -12px;
+    vertical-align: middle;
+    display: inline-block;
+    color: #fff;
+    letter-spacing: -0.5px;
+}
+
+/* 3. Navigation Menu Hover Effect */
+nav ul li a {
+    position: relative;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, #00d4ff, #007cf0);
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* 4. Hero Section - Text Readability (ALL PAGES) */
+.cover h1 {
+    text-shadow: 0 4px 25px rgba(0, 0, 0, 0.9);
+    font-weight: 800 !important;
+    letter-spacing: -2px;
+}
+
+.cover p {
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.9);
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+/* 5. Content Area Background (ALL PAGES) */
+.ph3.ph4-m.ph5-l {
+    background: linear-gradient(to bottom, #f8f9fa 0%, #fff 100%);
+}
+
+/* ==============================================
+   6. HOMEPAGE ONLY - Post Listing Section
+   These styles target the homepage post grid
+   ============================================== */
+
+/* Section Header */
+section.mw8.center h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    letter-spacing: -0.5px;
+}
+
+/* Post Grid Container - Centered, Professional */
+section.mw8.center .list.pl0 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Post Cards - ULTRA COMPACT */
+section.mw8.center .list.pl0>li {
+    background: white;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+    border: 1px solid #eee;
+    list-style: none;
+}
+
+section.mw8.center .list.pl0>li:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-color: rgba(102, 126, 234, 0.4);
+}
+
+/* Post Title - Small inline */
+section.mw8.center .list.pl0 h1 {
+    font-size: 0.95rem !important;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.25rem;
+    line-height: 1.2;
+}
+
+/* Post Summary - Single line with ellipsis */
+section.mw8.center .list.pl0 .lh-copy {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: #888;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+/* Read More - Tiny link style */
+section.mw8.center a.ba.b--moon-gray {
+    padding: 4px 10px;
+    border-radius: 4px;
+    background: #667eea;
+    color: white !important;
+    border: none !important;
+    font-weight: 600;
+    font-size: 0.7rem;
+    display: inline-block;
+}
+
+section.mw8.center a.ba.b--moon-gray:hover {
+    background: #764ba2;
+}
+
+/* ==============================================
+   7. SINGLE POST PAGES - Claude Design Style
+   Purple gradient header, modern typography
+   ============================================== */
+
+/* Post Hero Header - Purple Gradient */
+.cover.bg-left.bg-center-l {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%) !important;
+    min-height: 35vh;
+}
+
+.cover.bg-left.bg-center-l h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem) !important;
+    font-weight: 800 !important;
+    color: white !important;
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    letter-spacing: -1px;
+}
+
+/* Post Meta (Date, Reading time) - White badges */
+.cover .f6,
+.cover time {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 14px;
+    border-radius: 20px;
+    color: white !important;
+    font-weight: 500;
+    backdrop-filter: blur(5px);
+    display: inline-block;
+    margin-right: 8px;
+}
+
+/* Article Content Container */
+article.cf.ph3-l {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    background: white;
+    margin-top: -3rem;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.05);
+}
+
+/* First paragraph - Featured style */
+article.cf.ph3-l .lh-copy p:first-of-type {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Regular paragraphs */
+article.cf.ph3-l .lh-copy {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #333;
+}
+
+/* Headings with Left Accent Bar */
+article.cf.ph3-l h2,
+article.cf.ph3-l h3 {
+    color: #1a1a1a;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    border-left: 4px solid #764ba2;
+    padding-left: 1rem;
+    margin-left: -1rem;
+}
+
+article.cf.ph3-l h2 {
+    font-size: 1.6rem;
+}
+
+article.cf.ph3-l h3 {
+    font-size: 1.3rem;
+    border-left-color: #667eea;
+}
+
+/* Links in content */
+article.cf.ph3-l a {
+    color: #764ba2;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(118, 75, 162, 0.3);
+    transition: all 0.2s ease;
+}
+
+article.cf.ph3-l a:hover {
+    color: #667eea;
+    border-bottom-color: #667eea;
+}
+
+/* Tags Styling */
+.tag,
+a[href*="/tags/"] {
+    display: inline-block;
+    padding: 6px 16px;
+    margin: 4px;
+    border-radius: 20px;
+    background: #f0f0f0;
+    color: #555 !important;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none !important;
+    border: none !important;
+    transition: all 0.2s ease;
+}
+
+.tag:hover,
+a[href*="/tags/"]:hover {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+/* Read More Button - Purple gradient */
+article a.ba.b--moon-gray,
+.btn-read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white !important;
+    border: none !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(118, 75, 162, 0.3);
+}
+
+article a.ba.b--moon-gray:hover,
+.btn-read-more:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(118, 75, 162, 0.4);
+}
+
+article a.ba.b--moon-gray::after {
+    content: '→';
+    font-size: 1.1rem;
+}
+
+/* ==============================================
+   8. ABOUT & CONTACT PAGES - Clean Content
+   ============================================== */
+
+/* Reset any card styling for regular content pages */
+.nested-copy-line-height {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: left;
+    /* Left align for readability */
+}
+
+.nested-copy-line-height p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.nested-copy-line-height a {
+    color: #0099cc;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 153, 204, 0.3);
+}
+
+.nested-copy-line-height a:hover {
+    color: #007cf0;
+    border-bottom-color: #007cf0;
+}
+
+
+
+.btn-blog {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #00d4ff, #007cf0);
+    color: white !important;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+}
+
+.btn-blog:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4);
+}
+
+/* ==============================================
+   9. Footer
+   ============================================== */
+footer {
+    background-color: #0f0f0f !important;
+    border-top: 1px solid #222;
+}
+
+/* ==============================================
+   10. Extras
+   ============================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: rgba(0, 212, 255, 0.25);
+    color: #000;
+}

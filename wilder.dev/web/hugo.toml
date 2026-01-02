@@ -1,3 +1,41 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://wilberquinto455.github.io/wilder.dev/'
+languageCode = 'es-es'
+title = 'Wilder.devnet'
+theme = 'ananke'
+
+# Allow raw HTML in Markdown files
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[author]
+    name = 'Wilder Andrés Quinto Torres'
+    email = 'wilberquinto455@gmail.com'
+    url = 'https://github.com/wilberquinto455'
+    bio = 'Desarrollador web con experiencia en el desarrollo de aplicaciones web con tecnologías como HTML, CSS, JavaScript, React, Node.js, y más.'
+
+[params]
+    avatar = 'https://github.com/wilberquinto455.png'
+    description = 'Desarrollador web con experiencia en el desarrollo de aplicaciones web con tecnologías como HTML, CSS, JavaScript, React, Node.js, y más.'
+    custom_css = ['css/custom.css']
+    site_logo = 'images/logo.svg'
+
+[menu]
+    [[menu.main]]
+        name = 'Inicio'
+        url = '/'
+        weight = 1
+    [[menu.main]]
+        name = 'Sobre Mí'
+        url = '/about/'
+        weight = 2
+    [[menu.main]]
+        name = 'Contacto'
+        url = '/contact/'
+        weight = 3
+
+[permalinks]
+    post = "/posts/:year/:month/:day/:slug/"
+
+
